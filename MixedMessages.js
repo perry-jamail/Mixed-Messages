@@ -17,7 +17,13 @@ let randMsg3 = () => {
 }
 
 let randInspMsg = () => {
-  console.log(randMsg1() + randMsg2() + randMsg3());
+  return randMsg1() + randMsg2() + randMsg3();
 }
 
-randInspMsg();
+console.log(randInspMsg());
+
+let quoteButton = document.querySelector('button');
+function runQuote(){
+  document.querySelector('p').innerHTML = randInspMsg();
+}
+quoteButton.onclick = runQuote;

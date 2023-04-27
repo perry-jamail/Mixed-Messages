@@ -1,0 +1,11 @@
+header h1 {
+    color: blue;
+}
+
+* {
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
